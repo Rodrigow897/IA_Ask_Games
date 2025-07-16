@@ -10,7 +10,7 @@ body {
     linear-gradient(to bottom, rgba(18, 18, 20, 0) 80%, #121214 100%),
     url("./assets/bg.jpg");
      background-repeat: no-repeat;
-     background-size: 100% 60% ;
+     background-size: 100% 40% ;
      background-position: top center;
      background-color: #121214;
      color: white; 
@@ -38,7 +38,7 @@ main {
 
 section {
     background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50%, #E2D45C 100%);
-    border-radius: 0.5rem;
+    border-radius: 0.625rem;
     padding-top: 4px;
 }
 
@@ -60,7 +60,7 @@ section p {
 
 /*animações*/
 main section {
-    opacity: 0; 
+    opacity: 1; 
     transform: translateY(2rem);
 
     animation-name: appear;
@@ -73,4 +73,43 @@ main section {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+form {
+    display: flex;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+    margin: 1.25rem 0;
+}
+
+form input, form select {
+    all: unset;
+    border: 2px solid #9147ff;
+    border-radius: 0.5rem;
+    padding: 0.675rem;
+    font-size: 0.875rem;
+    background-color: #00000055;
+}
+
+form input {
+    flex: 1;
+}
+
+button {
+    width: 100%;
+    border: 0;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50%, #E2D45C 100%);
+    padding: 0.675rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.12px;
+
+    transition: all 0.2s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 1rem rgba(255, 248, 107, 0.2);
 }
