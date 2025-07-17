@@ -119,6 +119,7 @@ button:disabled {
     transform: initial;
     box-shadow: initial;
     cursor: not-allowed;
+    color: black
 }
 
 .loading {
